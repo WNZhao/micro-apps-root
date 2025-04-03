@@ -1,0 +1,3 @@
+[submodule "micro-main-vue3"]
+	path = micro-main-vue3
+	url = git@github.com:WNZhao/micro-main-vue3.git
