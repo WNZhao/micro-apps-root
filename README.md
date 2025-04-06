@@ -123,3 +123,26 @@ mock 示例：
 
 - 使用 axios 拦截器统一处理 token
 - 子应用通过环境变量控制是否启用 mock
+
+## 推荐结构
+
+```arduino
+micro-apps-root/        ← 顶层 Git 仓库
+│
+├── micro-main-vue3/          ← 主应用（子模块，独立仓库） git submodule add git@github.com:WNZhao/micro-main-vue3.git
+├── child-nuxt2-home/   ← 子应用：首页（子模块）
+├── child-vue2-job/     ← 子应用：找工作和找企业（共用或拆分）
+├── child-react18-about/← 子应用：关于我们（子模块）
+└── README.md
+
+```
+
+### micro-main-vue3
+
+```bash
+pnpm create vue@latest
+# ts
+# pina
+# vue-router
+
+```
