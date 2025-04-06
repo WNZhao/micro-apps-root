@@ -130,10 +130,24 @@ mock 示例：
 micro-apps-root/        ← 顶层 Git 仓库
 │
 ├── micro-main-vue3/          ← 主应用（子模块，独立仓库） git submodule add git@github.com:WNZhao/micro-main-vue3.git
-├── child-nuxt2-home/   ← 子应用：首页（子模块）
+├── micro-child-nuxt3-home/     ← 子模块目录（指向另一个 Git 仓库）git submodule add git@github.com:WNZhao/micro-child-nuxt3-home.git micro-child-nuxt3-home
 ├── child-vue2-job/     ← 子应用：找工作和找企业（共用或拆分）
 ├── child-react18-about/← 子应用：关于我们（子模块）
 └── README.md
+
+```
+
+> 一次性获取所有 submodule 的最新代码
+
+```bash
+# 进入主项目目录
+cd main-project
+
+# 初始化并更新所有子模块（如果已存在可以跳过 init）
+git submodule update --init --recursive
+
+# 进入每个子模块并切换到主分支（如 main 或 master）并拉取最新
+git submodule foreach 'git checkout main || git checkout master; git pull'
 
 ```
 
