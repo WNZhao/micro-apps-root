@@ -4,3 +4,7 @@
 [submodule "micro-child-nuxt3-home"]
 	path = micro-child-nuxt3-home
 	url = git@github.com:WNZhao/micro-child-nuxt3-home.git
+[submodule "micro-child-vue2-job"]
+	path = micro-child-vue2-job
+	url = git@github.com:WNZhao/micro-child-vue2-job.git
+	branch = main
