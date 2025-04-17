@@ -8,3 +8,6 @@
 	path = micro-child-vue2-job
 	url = git@github.com:WNZhao/micro-child-vue2-job.git
 	branch = main
+[submodule "submodules/mico-child-vue3-enterprise"]
+	path = submodules/mico-child-vue3-enterprise
+	url = git@github.com:WNZhao/mico-child-vue3-enterprise.git
